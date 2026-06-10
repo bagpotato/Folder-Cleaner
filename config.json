@@ -1,0 +1,9 @@
+{
+    "target_folder": "auto",
+    "auto_mode": false,
+    "watch_interval": 10,
+    "log_file": "folder_cleaner.log",
+    "log_level": "INFO",
+    "ignore_hidden": true,
+    "custom_categories": {}
+}
