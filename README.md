@@ -6,7 +6,6 @@ Works on Windows, Linux and macOS.
 
 <p align="left">
   <a href="https://www.python.org/"><img src="https://skillicons.dev/icons?i=python" alt="Python" /></a>
-  <a href="https://github.com/"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" /></a>
   <a href="https://www.linux.org/"><img src="https://skillicons.dev/icons?i=linux" alt="Linux" /></a>
   <a href="https://www.apple.com/macos/"><img src="https://skillicons.dev/icons?i=apple" alt="macOS" /></a>
   <a href="https://www.microsoft.com/windows/"><img src="https://skillicons.dev/icons?i=windows" alt="Windows" /></a>
