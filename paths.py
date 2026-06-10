@@ -24,7 +24,7 @@ def get_downloads() -> Path:
 
     Windows: uses the ``User Shell Folders`` registry entry (or
     ``{USERPROFILE}\\Downloads`` as fallback). Linux/macOS: uses
-    ``$XDG_DOWNLOAD_DIR`` or ``~/Downloads``.
+    ``$XDG_DOWNLOAD_DIR`` or a localized Downloads folder name.
     """
     home = get_home()
 
@@ -50,7 +50,23 @@ def get_downloads() -> Path:
         if path.exists():
             return path
 
-    for candidate in ("Downloads",):
+    DOWNLOADS_NAMES = (
+        "Downloads",          # English / German
+        "Descargas",          # Spanish
+        "Téléchargements",    # French
+        "Scaricati",          # Italian
+        "Transferências",     # Portuguese
+        "Загрузки",           # Russian
+        "下载",                # Chinese
+        "ダウンロード",         # Japanese
+        "다운로드",             # Korean
+        "Indirilen",          # Turkish
+        "Downloads",          # Dutch (same as English)
+        "Pobrane",            # Polish
+        "تنزيلات",            # Arabic
+    )
+
+    for candidate in DOWNLOADS_NAMES:
         path = home / candidate
         if path.exists():
             return path
